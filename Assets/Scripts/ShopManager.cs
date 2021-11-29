@@ -9,9 +9,4 @@ public class ShopManager : MonoBehaviour
     {
         PlayerManager.forwardSpeed += 1;
     }
-    public void Back()
-    {
-        SceneManager.LoadScene(0);
-    }
-
 }

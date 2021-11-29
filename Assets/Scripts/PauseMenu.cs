@@ -7,13 +7,12 @@ public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject sureR;
-    public GameObject sureL;
     public GameObject sureM;
+
     void Start()
     {
         pauseMenu.SetActive(false);
         sureR.SetActive(false);
-        sureL.SetActive(false);
         sureM.SetActive(false);
     }
 
@@ -34,13 +33,6 @@ public class PauseMenu : MonoBehaviour
         sureR.SetActive(true);
         pauseMenu.SetActive(false);
     }
-
-    public void AreYouSureLvl()
-    {
-        sureL.SetActive(true);
-        pauseMenu.SetActive(false);
-    }
-
     public void AreYouSureMenu()
     {
         sureM.SetActive(true);
@@ -52,11 +44,6 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void YesSelectLevel()
-    {
-        SceneManager.LoadScene(1);
-    }
-
     public void YesMainMenu()
     {
         SceneManager.LoadScene(0);
@@ -65,7 +52,6 @@ public class PauseMenu : MonoBehaviour
     public void No()
     {
         sureR.SetActive(false);
-        sureL.SetActive(false);
         sureM.SetActive(false);
         pauseMenu.SetActive(true);
     }

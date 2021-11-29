@@ -6,12 +6,34 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
+    GameObject shop;
+    GameObject levelSelect;
+    GameObject mainMenu;
+
+
+    void Start()
+    {
+        shop = GameObject.Find("ShopScreen");
+        levelSelect = GameObject.Find("LevelSelect");
+        mainMenu = GameObject.Find("MainMenu");
+        shop.SetActive(false);
+        levelSelect.SetActive(false);
+        mainMenu.SetActive(true);
+    }
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        mainMenu.SetActive(false);
+        levelSelect.SetActive(true);
     }
     public void Shop()
     {
-        SceneManager.LoadScene("Shop");
+        mainMenu.SetActive(false);
+        shop.SetActive(true);
+    }
+
+    public void ShopBack()
+    {
+        shop.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }
