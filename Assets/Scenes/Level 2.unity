@@ -13149,7 +13149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57aecee475a11b45a90511c9a59ff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 619049604}
   horizontalSpeed: 10
   jumpForce: 7
   swipeRange: 0

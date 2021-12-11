@@ -6962,7 +6962,7 @@ MonoBehaviour:
   m_fontSizeMax: 5196.4
   m_fontStyle: 1
   m_HorizontalAlignment: 4
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14969,7 +14969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b57aecee475a11b45a90511c9a59ff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1032216883}
   horizontalSpeed: 10
   jumpForce: 7
   swipeRange: 0
